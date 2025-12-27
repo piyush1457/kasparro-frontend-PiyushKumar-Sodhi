@@ -1,0 +1,137 @@
+[
+  {
+    "id": "llm_visibility",
+    "name": "LLM Visibility",
+    "description": "Measures how often your brand appears in direct responses from major LLMs (chatGPT, Gemini, Claude).",
+    "score": 78,
+    "status": "warning",
+    "insights": [
+      "High visibility in ChatGPT-4 for transactional queries.",
+      "Low visibility in Gemini for informational queries."
+    ],
+    "issues": [
+      "Brand is often confused with 'Acme Ltd' in older model snapshots."
+    ],
+    "recommendations": [
+      {
+        "id": "r1",
+        "title": "Disambiguate Entity",
+        "description": "Update 'About Us' schema to strictly define corporate identity.",
+        "impact": "high"
+      },
+      {
+        "id": "r2",
+        "title": "Target Informational Queries",
+        "description": "Create content specifically answering 'What is...' questions.",
+        "impact": "medium"
+      }
+    ]
+  },
+  {
+    "id": "entity_trust",
+    "name": "Trust & EEAT",
+    "description": "Evaluates the perceived authority and trustworthiness of your brand entity within the Knowledge Graph.",
+    "score": 85,
+    "status": "pass",
+    "insights": [
+      "Strong association with 'Reliable' and 'Enterprise-grade'.",
+      "Executive profiles are well-cited."
+    ],
+    "issues": [],
+    "recommendations": [
+      {
+        "id": "r3",
+        "title": "Maintain Wikipedia Citations",
+        "description": "Ensure recent press releases are cited in secondary sources.",
+        "impact": "low"
+      }
+    ]
+  },
+  {
+    "id": "citation_authority",
+    "name": "Citation Authority",
+    "description": "Tracks the quality and volume of citations from high-authority AI-weighted sources.",
+    "score": 62,
+    "status": "warning",
+    "insights": [
+      "Good coverage in tech new aggregates."
+    ],
+    "issues": [
+      "Lack of presence in academic or deep-research datasets."
+    ],
+    "recommendations": [
+      {
+        "id": "r4",
+        "title": "Publish Whitepapers",
+        "description": "Release original research to gain academic citations.",
+        "impact": "high"
+      }
+    ]
+  },
+  {
+    "id": "sentiment_analysis",
+    "name": "AI Sentiment",
+    "description": "Analyzes the emotional tone and subjective description of your brand in generated text.",
+    "score": 92,
+    "status": "pass",
+    "insights": [
+      "Overwhelmingly positive sentiment in product reviews summaries."
+    ],
+    "issues": [],
+    "recommendations": []
+  },
+  {
+    "id": "competitor_share",
+    "name": "Share of Voice",
+    "description": "Compares your entity's frequency of mention against top 5 competitors in your sector.",
+    "score": 45,
+    "status": "critical",
+    "insights": [
+      "Competitor X dominates 'Cloud Storage' queries."
+    ],
+    "issues": [
+      "being mentioned 3x less than market leader."
+    ],
+    "recommendations": [
+      {
+        "id": "r5",
+        "title": "Aggressive Comparison Campaigns",
+        "description": "Create 'Us vs Them' pages to force association.",
+        "impact": "high"
+      }
+    ]
+  },
+  {
+    "id": "keyword_coverage",
+    "name": "Non-Branded Coverage",
+    "description": "Your effective visibility for category-defining terms without using your brand name.",
+    "score": 55,
+    "status": "warning",
+    "insights": [
+      "Ranking well for long-tail, struggling with head terms."
+    ],
+    "issues": [
+      "Generic terms are dominated by aggregators."
+    ],
+    "recommendations": [
+      {
+        "id": "r6",
+        "title": "Topic Cluster Strategy",
+        "description": "Build comprehensive guides around core category terms.",
+        "impact": "medium"
+      }
+    ]
+  },
+  {
+    "id": "knowledge_graph",
+    "name": "Knowledge Graph Strength",
+    "description": "The completeness and accuracy of your brand's node in public and private knowledge graphs.",
+    "score": 88,
+    "status": "pass",
+    "insights": [
+      "Entity is fully resolved in Google Knowledge Graph."
+    ],
+    "issues": [],
+    "recommendations": []
+  }
+]

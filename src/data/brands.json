@@ -1,0 +1,18 @@
+[
+  {
+    "id": "acme_corp",
+    "name": "Acme Corp",
+    "domain": "acme.com",
+    "industry": "SaaS",
+    "lastAuditDate": "2024-03-15T10:00:00Z",
+    "aggregateScore": 76
+  },
+  {
+    "id": "globex",
+    "name": "Globex Inc.",
+    "domain": "globex.io",
+    "industry": "Fintech",
+    "lastAuditDate": "2024-03-10T14:30:00Z",
+    "aggregateScore": 62
+  }
+]

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #fafafa;
+  /* zinc-50 */
+  --foreground: #18181b;
+  /* zinc-900 */
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --border: #e4e4e7;
+  /* zinc-200 */
+  /* Aesthetic Light Gradient: Subtle top glow */
+  --bg-image: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 40%), radial-gradient(circle at 100% 0%, rgba(168, 85, 247, 0.05) 0%, transparent 25%);
+}
+
+.dark {
+  --background: #09090b;
+  /* zinc-950 */
+  --foreground: #fafafa;
+  /* zinc-50 */
+  --card: #18181b;
+  /* zinc-900 */
+  --card-foreground: #fafafa;
+  --border: #27272a;
+  /* zinc-800 */
+  --bg-image: none;
+  /* Keep dark mode deep and clean, or add a very subtle dark glow if requested */
+}
+
+@theme {
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+}
+
+body {
+  @apply antialiased transition-colors duration-300;
+  background-color: var(--background);
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  color: var(--foreground);
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 dark:bg-zinc-900/60 backdrop-blur-md border border-white/20 dark:border-zinc-800 shadow-sm transition-colors duration-300;
+  }
+}
