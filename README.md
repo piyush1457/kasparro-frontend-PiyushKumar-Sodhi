@@ -8,6 +8,8 @@ As users increasingly rely on tools like ChatGPT, Gemini, and Claude instead of 
 
 This project focuses on product design, frontend architecture, and UX — not real AI model integration.
 
+Live on:
+https://kasparro-frontend-piyush-kumar-sodh-omega.vercel.app/
 ---
 
 ## Problem Statement
