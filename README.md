@@ -79,6 +79,7 @@ Kasparro can be used as a portfolio project, MVP concept, or foundation for a re
 ```bash
 npm install
 npm run dev
+```
 ## Component Usage Guide
 
 ### 🎨 Design System
