@@ -79,3 +79,41 @@ Kasparro can be used as a portfolio project, MVP concept, or foundation for a re
 ```bash
 npm install
 npm run dev
+## Component Usage Guide
+
+### 🎨 Design System
+The project uses a custom aesthetic with a core palette of Indigo, Violet, and Cyan.
+
+- **Primary Gradient**: `bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-500`
+- **Text Gradient**: Use the `.text-gradient-brand` utility class.
+
+### 🧩 Core Components
+
+#### `Button`
+Supports variable variants. Use `primary` for main CTAs (applies the brand gradient).
+```tsx
+<Button variant="primary" size="lg">Action</Button>
+<Button variant="outline">Secondary</Button>
+```
+
+#### `Card`
+Glassmorphism-styled container with `backdrop-blur`.
+```tsx
+<Card>
+  <CardHeader><CardTitle>...</CardTitle></CardHeader>
+  <CardContent>...</CardContent>
+</Card>
+```
+
+#### `Skeleton`
+Loading placeholder for async data.
+```tsx
+<Skeleton className="h-10 w-full" />
+```
+
+#### `StatusIcon`
+Visual indicator for audit results.
+```tsx
+<StatusIcon status="pass" /> // Green check
+<StatusIcon status="warning" /> // Yellow triangle
+```
