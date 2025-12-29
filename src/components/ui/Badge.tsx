@@ -10,6 +10,12 @@ interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
     variant?: 'default' | 'outline' | 'success' | 'warning' | 'destructive';
 }
 
+/**
+ * Badge Component
+ * 
+ * Displays a small status indicator or label.
+ * Supports multiple semantic variants for different contexts.
+ */
 export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(
     ({ className, variant = 'default', ...props }, ref) => {
         const variants = {

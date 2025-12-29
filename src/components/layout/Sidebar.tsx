@@ -6,6 +6,13 @@ import { clsx } from 'clsx';
 import { BarChart3, LayoutDashboard, Layers, Network } from 'lucide-react';
 import { ThemeToggle } from '../ui/ThemeToggle';
 
+/**
+ * Sidebar Component
+ * 
+ * Persist navigation sidebar for the authenticated application.
+ * Handles navigation links, active state highlighting, and theme toggling.
+ * Displays "Kasparro" branding.
+ */
 export default function Sidebar() {
   const pathname = usePathname();
 
@@ -18,7 +25,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 bg-white dark:bg-zinc-900 border-r dark:border-zinc-800 flex flex-col h-screen sticky top-0 transition-colors duration-300">
+    <aside className="w-64 bg-white/70 backdrop-blur-md dark:bg-zinc-900/90 border-r border-border dark:border-zinc-800 flex flex-col h-screen sticky top-0 transition-colors duration-300">
       <div className="p-6 border-b dark:border-zinc-800">
         <h2 className="font-bold text-xl tracking-tight text-zinc-900 dark:text-zinc-100">Kasparro</h2>
         <p className="text-xs text-gray-500 dark:text-gray-400">Brand Intelligence</p>
@@ -39,7 +46,7 @@ export default function Sidebar() {
                   : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 hover:text-gray-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
               )}
             >
-              <Icon className={clsx("h-5 w-5", isActive ? "text-blue-600" : "text-gray-400")} />
+              <Icon className={clsx("h-5 w-5", isActive ? "text-indigo-600 dark:text-indigo-400" : "text-gray-400")} />
               {link.label}
             </Link>
           );

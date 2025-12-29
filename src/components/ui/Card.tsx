@@ -6,11 +6,20 @@ function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }
 
+/**
+ * Card Component
+ * 
+ * Container for grouping related content.
+ * Provides consistent styling for background, border, and shadow.
+ */
 export const Card = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
     ({ className, ...props }, ref) => (
         <div
             ref={ref}
-            className={cn('rounded-xl border bg-white text-gray-900 shadow-sm dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100 transition-colors', className)}
+            className={cn(
+                'rounded-xl border bg-card text-card-foreground shadow-sm backdrop-blur-md transition-colors dark:bg-zinc-900 dark:border-zinc-800 dark:text-zinc-100',
+                className
+            )}
             {...props}
         />
     )

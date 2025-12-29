@@ -6,6 +6,12 @@ function cn(...inputs: ClassValue[]) {
     return twMerge(clsx(inputs));
 }
 
+/**
+ * Container Component
+ * 
+ * Centers content and adds horizontal padding.
+ * Responsive max-width based on breakpoints.
+ */
 export const Container = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
     ({ className, ...props }, ref) => (
         <div

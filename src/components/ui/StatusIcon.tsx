@@ -8,6 +8,12 @@ const statusMap = {
     info: { icon: Info, color: 'text-blue-500' },
 };
 
+/**
+ * StatusIcon Component
+ * 
+ * Renders an icon based on a given status string.
+ * Used for visual feedback in lists and dashboards.
+ */
 export function StatusIcon({ status, className }: { status: AuditStatus; className?: string }) {
     const { icon: Icon, color } = statusMap[status];
 

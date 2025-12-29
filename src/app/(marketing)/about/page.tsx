@@ -22,7 +22,7 @@ export default function AboutPage() {
               </Badge>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-zinc-50 sm:text-6xl mb-8 max-w-4xl mx-auto">
-              From Search Engines to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Answer Engines</span>
+              From Search Engines to <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">Answer Engines</span>
             </h1>
             <div className="prose prose-lg max-w-3xl mx-auto text-gray-600 dark:text-gray-400">
               <p className="text-xl leading-relaxed">
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <Card className="glass-panel border-0 ring-1 ring-gray-200/50 dark:ring-zinc-800 shadow-xl shadow-gray-200/20 dark:shadow-black/20">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center mb-4 text-blue-600 dark:text-blue-400">
+                  <div className="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/20 flex items-center justify-center mb-4 text-indigo-600 dark:text-indigo-400">
                     <Brain className="w-6 h-6" />
                   </div>
                   <CardTitle className="text-xl">Our Vision</CardTitle>

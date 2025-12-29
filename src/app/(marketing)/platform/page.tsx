@@ -10,7 +10,7 @@ export default function PlatformPage() {
     <div className="relative overflow-hidden">
       {/* Background Gradients */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 center w-full h-[600px] bg-gradient-radial from-blue-100/40 via-transparent to-transparent dark:from-blue-900/10 dark:via-transparent dark:to-transparent" />
+        <div className="absolute top-0 center w-full h-[600px] bg-gradient-radial from-indigo-100/40 via-transparent to-transparent dark:from-indigo-900/10 dark:via-transparent dark:to-transparent" />
       </div>
 
       <div className="py-20 space-y-20">
@@ -22,7 +22,7 @@ export default function PlatformPage() {
               </Badge>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 dark:text-zinc-50 sm:text-6xl mb-6">
-              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400">Audit Pipeline</span>
+              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400">Audit Pipeline</span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
               Kasparro ingests brand data, processes it through 7 specialized AI-audit modules, and outputs actionable intelligence for the generative web.
@@ -43,37 +43,37 @@ export default function PlatformPage() {
                 </div>
                 <Card className="glass-panel border-0 ring-1 ring-gray-200/50 dark:ring-zinc-800 shadow-xl shadow-gray-200/20 dark:shadow-black/20 h-full">
                   <CardHeader>
-                    <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center mb-2 text-blue-600 dark:text-blue-400">
+                    <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/20 flex items-center justify-center mb-2 text-indigo-600 dark:text-indigo-400">
                       <Database className="w-5 h-5" />
                     </div>
                     <CardTitle>Data Sources</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> Brand Assets (Site, Blog, PR)</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> Knowledge Graph Nodes</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> SERP Snippets</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-blue-400" /> Common Crawl Data</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Brand Assets (Site, Blog, PR)</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Knowledge Graph Nodes</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> SERP Snippets</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Common Crawl Data</div>
                   </CardContent>
                 </Card>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center justify-center md:justify-start gap-4 mb-2">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center border border-blue-200 dark:border-blue-800 font-bold text-blue-600 dark:text-blue-400 z-10">2</div>
+                  <div className="w-10 h-10 rounded-full bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center border border-violet-200 dark:border-violet-800 font-bold text-violet-600 dark:text-violet-400 z-10">2</div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-zinc-100">Analyze</h3>
                 </div>
-                <Card className="glass-panel border-0 ring-1 ring-blue-200/50 dark:ring-blue-800/50 shadow-xl shadow-blue-200/20 dark:shadow-blue-900/10 bg-blue-50/30 dark:bg-blue-900/10 h-full">
+                <Card className="glass-panel border-0 ring-1 ring-violet-200/50 dark:ring-violet-800/50 shadow-xl shadow-violet-200/20 dark:shadow-violet-900/10 bg-violet-50/30 dark:bg-violet-900/10 h-full">
                   <CardHeader>
-                    <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/20 flex items-center justify-center mb-2 text-indigo-600 dark:text-indigo-400">
+                    <div className="w-10 h-10 rounded-lg bg-violet-100 dark:bg-violet-900/20 flex items-center justify-center mb-2 text-violet-600 dark:text-violet-400">
                       <BrainCircuit className="w-5 h-5" />
                     </div>
                     <CardTitle>AI Inference Engine</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm text-gray-600 dark:text-gray-300">
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Sentiment Scikit</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Entity Resolution</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> Vector Similarity Check</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-indigo-400" /> LLM Hallucination Test</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-violet-400" /> Sentiment Scikit</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-violet-400" /> Entity Resolution</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-violet-400" /> Vector Similarity Check</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-violet-400" /> LLM Hallucination Test</div>
                   </CardContent>
                 </Card>
               </div>
@@ -91,10 +91,10 @@ export default function PlatformPage() {
                     <CardTitle>Strategic Intelligence</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400" /> Visibility Score (0-100)</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400" /> EEAT Evaluation</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400" /> Corrective Content Briefs</div>
-                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-400" /> Citation Impact Report</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> Visibility Score (0-100)</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> EEAT Evaluation</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> Corrective Content Briefs</div>
+                    <div className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-cyan-400" /> Citation Impact Report</div>
                   </CardContent>
                 </Card>
               </div>
